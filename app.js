@@ -45,6 +45,7 @@ var budgetController = (function(){
 
 			//push newItem to 'inc' or 'exp'
 				data.allItems[type].push(newItem);
+				console.log(newItem);
 			//return newItem
 				return newItem;
 			},
@@ -94,7 +95,7 @@ var UIController = (function(){
 			//Replace the placeholder text with actual data
 			newHtml = html.replace('%id%',obj.id);
 			newHtml = newHtml.replace('%description%', obj.description);
-			newHtml = newHtml.replace('%value%', obj.value);
+			newHtml = newHtml.replace('%value%', obj.vallue);
 
 
 			//Insert html into DOM
